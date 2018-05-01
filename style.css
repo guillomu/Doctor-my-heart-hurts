@@ -42,15 +42,15 @@ header{
 	top:80px; left:4px; 
 }
 
-#bras{
+#coude{
 	top:180px; left:100px;
 }
 
-#main{
+#poignet{
 	top:220px; left:-10px;
 }
 
-#cuisse{
+#bassin{
 	top:240px; left:75px;
 }
 
@@ -58,7 +58,7 @@ header{
 	top:345px; left:22px;
 }
 
-#pied{
+#cheville{
 	top:425px; left:62px;
 }
 

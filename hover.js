@@ -11,10 +11,14 @@ function ClearColor(){
 
 
 function ChangeDesc(titre, desc, id){
-	var  cercle = document.getElementById(id);
 
 	ClearColor();
+	
+	if(id != ''){
+		var  cercle = document.getElementById(id);
+		cercle.style.backgroundColor = 'red';
+	}
+
 	description.firstChild.innerHTML = titre;
 	description.lastChild.innerHTML = desc;
-	cercle.style.backgroundColor = 'red';
 }

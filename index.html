@@ -8,23 +8,35 @@
 <body>
 	<div class="container">
 		<header>
-			<h1>Le Corps Humain</h1>
+			<h1 onmouseover="ChangeDesc('', 'Le corps humain est la structure culturelle et physique du corps d\'un être humain. Le corps humain est constitué de plusieurs systèmes (nerveux, digestif, etc.). Il est constitué de 206 os et 639 muscles dont 570 sont des muscles squelettiques.', '');">Le Corps Humain</h1>
 		</header>
 		<div id="rail">
 			<div id="corps">
 				<ul>
-					<li><a href="#" id="epaule" class="cercle" onclick="ChangeDesc('Epaule:', 'Epaule', 'epaule');"></a></li>
-					<li><a href="#" id="bras" class="cercle" onclick="ChangeDesc('Bras:', 'Bras', 'bras');"></a></li>
-					<li><a href="#" id="main" class="cercle" onclick="ChangeDesc('Main:', 'Main', 'main');"></a></li>
-					<li><a href="#" id="cuisse" class="cercle" onclick="ChangeDesc('Cuisse:', 'Cuisse', 'cuisse');"></a></li>
-					<li><a href="#" id="genou" class="cercle" onclick="ChangeDesc('Genou:', 'Genou', 'genou');"></a></li>
-					<li><a href="#" id="pied" class="cercle" onclick="ChangeDesc('Pied:', 'Pied', 'pied');"></a></li>
+					<li><a href="#" id="epaule" class="cercle" onmouseover="ChangeDesc('Epaule:', 
+					'L\'épaule (nom féminin) est la région morphologique se situant à la jonction du tronc avec le membre supérieur. Elle comporte plusieurs articulations qui concourent à en faire le complexe articulaire le plus mobile du corps humain. Elle permet d\'orienter le membre supérieur dans l\'espace, autorisant en particulier son extrémité effectrice, la main, à assurer ses rôles de préhension et de communication avec l\'environnement situé à sa portée.', 'epaule');"></a></li>
+
+					<li><a href="#" id="coude" class="cercle" onmouseover="ChangeDesc('Coude:', 
+					'Le coude (ou articulation olécranienne) est la partie du membre supérieur située entre le bras et l\'avant-bras. Cette articulation comprend en avant la région du « pli du coude » (ou fosse cubitale). C\'est un complexe articulaire synovial du membre supérieur humain reliant le bras à l\'avant-bras. Il unit ainsi trois os entre eux : le radius, l\'ulna (cubitus) et l\'humérus.', 'coude');"></a></li>
+
+					<li><a href="#" id="poignet" class="cercle" onmouseover="ChangeDesc('Poignet:', 
+					'Le poignet est une région du membre supérieur située entre la main et l\'avant-bras, et contenant le carpe. Élément-clé pour le fonctionnement de la main, il permet les mouvements (c\'est-à-dire les changements de place et d’orientation) de la main par rapport à l’avant-bras, transmet les forces appliquées de la main à l’avant-bras, permet d\'adapter la capacité de flexion-extension maximale des doigts et de la préhension.', 'poignet');"></a></li>
+
+					<li><a href="#" id="bassin" class="cercle" onmouseover="ChangeDesc('Bassin:', 
+					'Le bassin (en latin pelvis) est une partie du squelette, en forme d\'entonnoir, constitué des deux os coxaux latéraux, du coccyx et du sacrum en arrière. C\'est la ceinture pelvienne, constituant la jonction entre la colonne vertébrale mobile (axe du tronc) et les membres inférieurs1.', 'bassin');"></a></li>
+
+					<li><a href="#" id="genou" class="cercle" onmouseover="ChangeDesc('Genou:', 
+					'Le genou est une articulation qui permet de joindre la jambe à la cuisse. Elle met en jeu trois os, le fémur, le tibia et la patella, par le biais de trois articulations, l\'articulation fémoro-patellaire et la double articulation fémoro-tibiale. Le cartilage assure la fluidité des mouvements du genou. Le tissu élastique fin, le cartilage, protège l\'os et fait en sorte que les surfaces de l\'articulation glissent facilement les unes contre les autres.', 'genou');"></a></li>
+
+					<li><a href="#" id="cheville" class="cercle" onmouseover="ChangeDesc('Cheville:', 
+					'La cheville ou cou-de-pied est l\'articulation qui relie la jambe et le pied. Elle est parfois sujette à des entorses, le plus souvent externes par flexion plantaire et pied en équin. Une cheville adulte est composée, au point de vue osseux, de l\'épiphyse inférieure du tibia (malléole interne et plafond), de l\'épiphyse inférieure de la fibula (ou péroné) (malléole externe) et du talus (ou astragale). Classiquement, on parle d\'articulation supinale de l\'arrière pied.', 'cheville');"></a></li>
 				</ul>
 			</div>
-			<div id="description"><h2>Le corps</h2><br /><p>La vie la vie la vie,</p></div>
+			<div id="description"><h2></h2><br />
+				<p>Le corps humain est la structure culturelle et physique du corps d'un être humain. Le corps humain est constitué de plusieurs systèmes (nerveux, digestif, etc.). Il est constitué de 206 os et 639 muscles dont 570 sont des muscles squelettiques.</p></div>
 		</div>
 	</div>
 
-	<script src="onclick.js"></script>
+	<script src="hover.js"></script>
 </body>
 </html>
