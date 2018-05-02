@@ -7,6 +7,7 @@
 }
 
 html, body, .container{
+	background-color: #ededed;
 	height: 100%;
 	font-family: Arvo, Arial;
 }
@@ -15,12 +16,12 @@ header{
 	text-align: center;
 	padding-top: 30px;
 	padding-bottom: 50px;
-	width: 25%;
+	width: 100%;
 	margin: auto;
 }
 #rail {
 	position: relative;
-	width: 25%;
+	width: 30%;
 	margin: 0 auto;
 }
 
@@ -37,30 +38,17 @@ header{
 	list-style-type: none;
 }
 
+#epaule{ top:80px; left:4px; }
 
-#epaule{
-	top:80px; left:4px; 
-}
+#coude{ top:180px; left:100px; }
 
-#coude{
-	top:180px; left:100px;
-}
+#poignet{ top:220px; left:-10px; }
 
-#poignet{
-	top:220px; left:-10px;
-}
+#hanche{ top:240px; left:75px; }
 
-#bassin{
-	top:240px; left:75px;
-}
+#genou{ top:345px; left:22px; }
 
-#genou{
-	top:345px; left:22px;
-}
-
-#cheville{
-	top:425px; left:62px;
-}
+#cheville{ top:425px; left:62px; }
 
 #description{
 	position: absolute;
@@ -69,11 +57,55 @@ header{
 }
 
 a.cercle {
-  display:block; 
-  position:absolute; 
-  background-color: black;
-  opacity: 0.5;
-  width:45px; 
-  height:45px; 
-  border-radius: 50px;
+	display:block; 
+	position:absolute; 
+	background-color: black;
+	opacity: 0.5;
+	width:45px; 
+	height:45px; 
+	border-radius: 50px;
+}
+
+
+@media screen and (max-width: 1150px){
+	#rail{
+		width: 40%;
+	}
+
+	#corps{
+		background-size: 80%;
+		background-repeat: no-repeat;
+	}
+
+		#description{
+		font-size: 0.9em;
+	}
+
+
+	#epaule{ top:60px; left:0px; }
+
+	#coude{ top:140px; left:80px; }
+
+	#poignet{ top:170px; left:-10px; }
+
+	#hanche{ top:180px; left:60px; }
+
+	#genou{ top:270px; left:18px; }
+
+	#cheville{ top:340px; left:50px; }
+
+	a.cercle { width: 40px; height: 40px; }
+}
+
+@media screen and (max-width: 800px){
+	#rail{
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 550px){
+
+	#rail{
+		width: 80%;
+	}
 }
